@@ -323,6 +323,122 @@ class Factory
             isset($val->descontocondicionado) ? number_format($val->descontocondicionado, 2, '.', '') : null,
             false
         );
+
+
+        // trib
+
+        $tribnode = $this->dom->createElement('tipos:trib');
+        $totTribnode = $this->dom->createElement('tipos:totTrib');
+        $ptotTribnode = $this->dom->createElement('tipos:pTotTrib');
+
+        $this->dom->addChild(
+            $ptotTribnode,
+            "tipos:pTotTribFed",
+            "0.00",
+            false
+        );
+        
+        $this->dom->addChild(
+            $ptotTribnode,
+            "tipos:pTotTribEst",
+            "0.00",
+            false
+        );
+
+        $this->dom->addChild(
+            $ptotTribnode,
+            "tipos:pTotTribMun",
+            "0.00",
+            false
+        );
+
+
+        $totTribnode->appendChild($ptotTribnode);
+        $tribnode->appendChild($totTribnode);
+        $valnode->appendChild($tribnode);
+
+        if(isset($val->ibscbs)){
+            
+            $ibscbsnode = $this->dom->createElement('tipos:IBSCBS');
+
+            if (isset($val->ibscbs->tsfinnfse)) {
+                $this->dom->addChild(
+                    $ibscbsnode,
+                    "tipos:finNFSe",
+                    $val->ibscbs->tsfinnfse,
+                    true
+                );
+            }
+
+            if (isset($val->ibscbs->tsindfinal)) {
+                $this->dom->addChild(
+                    $ibscbsnode,
+                    "tipos:indFinal",
+                    $val->ibscbs->tsindfinal,
+                    true
+                );
+            }
+
+            if (isset($val->ibscbs->tscindop)) {
+                $this->dom->addChild(
+                    $ibscbsnode,
+                    "tipos:cIndOp",
+                    $val->ibscbs->tscindop,
+                    true
+                );
+            }
+
+            if (isset($val->ibscbs->tsinddest)) {
+                $this->dom->addChild(
+                    $ibscbsnode,
+                    "tipos:indDest",
+                    $val->ibscbs->tsinddest,
+                    true
+                );
+            }
+
+            $valIbsnode = $this->dom->createElement('tipos:valores');
+            $valtribIbsNode = $this->dom->createElement('tipos:trib');
+            $valtribIbsCbsNode = $this->dom->createElement('tipos:gIBSCBS');
+            $this->dom->addChild(
+                    $valtribIbsCbsNode,
+                    "tipos:CST",
+                    $val->ibscbs->tscst,
+                    true
+            );
+
+            $this->dom->addChild(
+                    $valtribIbsCbsNode,
+                    "tipos:cClassTrib",
+                    $val->ibscbs->tscclasstrib,
+                    true
+            );
+
+            $valtribIbsNode->appendChild($valtribIbsCbsNode);
+            $valIbsnode->appendChild($valtribIbsNode);
+
+            
+            if (isset($val->ibscbs->clocalidadeincid)) {
+                $this->dom->addChild(
+                    $valIbsnode,
+                    "tipos:cLocalidadeIncid",
+                    $val->ibscbs->clocalidadeincid,
+                    true
+                );
+            }
+
+            $this->dom->addChild(
+                    $valIbsnode,
+                    "tipos:pRedutor",
+                    "0.00",
+                    true
+            );
+
+            $ibscbsnode->appendChild($valIbsnode);
+            $valnode->appendChild($ibscbsnode);
+        }
+
+        
         $node->appendChild($valnode);
         $this->dom->addChild(
             $node,
@@ -354,6 +470,16 @@ class Factory
             $serv->codigomunicipio,
             true
         );
+        
+        if(isset($val->ibscbs->nbs)){
+            $this->dom->addChild(
+                $node,
+                "tipos:CodigoNbs",
+                $val->ibscbs->nbs,
+                true
+            );
+        }
+
         $parent->appendChild($node);
     }
 

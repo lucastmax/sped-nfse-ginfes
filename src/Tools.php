@@ -55,6 +55,7 @@ class Tools extends BaseTools
             $rps->config($this->config);
             $content .= $rps->render();
         }
+
         $contentmsg = "<EnviarLoteRpsEnvio xmlns=\"http://www.ginfes.com.br/servico_enviar_lote_rps_envio_v03.xsd\">"
             . "<LoteRps Id=\"$lote\" xmlns:tipos=\"http://www.ginfes.com.br/tipos_v03.xsd\">"
             . "<tipos:NumeroLote>$lote</tipos:NumeroLote>"
@@ -66,7 +67,6 @@ class Tools extends BaseTools
             . "</tipos:ListaRps>"
             . "</LoteRps>"
             . "</EnviarLoteRpsEnvio>";
-
         $content = Signer::sign(
             $this->certificate,
             $contentmsg,
@@ -77,6 +77,7 @@ class Tools extends BaseTools
             'EnviarLoteRpsEnvio'
         );
         $content = str_replace(['<?xml version="1.0"?>', '<?xml version="1.0" encoding="UTF-8"?>'], '', $content);
+        //dd($content);
         Validator::isValid($content, $this->xsdpath . "/servico_enviar_lote_rps_envio_v03.xsd");
         return $this->send($content, $operation);
     }
