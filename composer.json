@@ -1,5 +1,5 @@
 {
-    "name": "lucastmax/sped-nfse-ginfes",
+    "name": "nfephp-org/sped-nfse-ginfes",
     "type": "library",
     "description": "API para geração e comunicação de RPS e NFSe no padão Ginfes.",
     "keywords": ["nfe","nfse","sped","nfephp"],
