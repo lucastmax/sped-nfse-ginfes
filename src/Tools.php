@@ -77,8 +77,7 @@ class Tools extends BaseTools
             'EnviarLoteRpsEnvio'
         );
         $content = str_replace(['<?xml version="1.0"?>', '<?xml version="1.0" encoding="UTF-8"?>'], '', $content);
-        //dd($content);
-        //Validator::isValid($content, $this->xsdpath . "/servico_enviar_lote_rps_envio_v03.xsd");
+       Validator::isValid($content, $this->xsdpath . "/servico_enviar_lote_rps_envio_v03.xsd");
         return $this->send($content, $operation);
     }
 

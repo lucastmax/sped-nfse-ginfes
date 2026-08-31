@@ -118,7 +118,6 @@ class Tools
             throw new \Exception("Não está registrada a URL para o ambiente "
                 . "de {$this->environment} desse municipio.");
         }
-        
         $request = $this->createSoapRequest($message, $operation);
         $this->lastRequest = $request;
 
