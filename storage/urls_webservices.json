@@ -152,6 +152,16 @@
         "homologacao_soapns": "http:\/\/homologacao.ginfes.com.br",
         "producao_soapns": "http:\/\/producao.ginfes.com.br"
     },
+    "3541000": {
+        "municipio": "Praia Grande",
+        "uf": "SP",
+        "homologacao": "https:\/\/homologacao.ginfes.com.br\/ServiceGinfesImpl",
+        "producao": "https:\/\/producao.ginfes.com.br\/ServiceGinfesImpl",
+        "version": "3",
+        "homologacao_soapns": "http:\/\/homologacao.ginfes.com.br",
+        "producao_soapns": "http:\/\/producao.ginfes.com.br"
+    },
+
     "3518800": {
         "municipio": "Guarulhos",
         "uf": "SP",
