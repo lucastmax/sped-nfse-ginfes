@@ -104,7 +104,9 @@ class Signer
         $canonical = self::CANONICAL
     ) {
         $nsDSIG = 'http://www.w3.org/2000/09/xmldsig#';
-        $nsCannonMethod = 'http://www.w3.org/TR/2001/REC-xml-c14n-20010315';
+        $nsCannonMethod = $canonical[0]
+            ? 'http://www.w3.org/2001/10/xml-exc-c14n#'
+            : 'http://www.w3.org/TR/2001/REC-xml-c14n-20010315';
         $nsSignatureMethod = 'http://www.w3.org/2000/09/xmldsig#rsa-sha1';
         $nsDigestMethod = 'http://www.w3.org/2000/09/xmldsig#sha1';
         $digestAlgorithm = 'sha1';
@@ -114,51 +116,51 @@ class Signer
             $nsDigestMethod = 'http://www.w3.org/2001/04/xmlenc#sha256';
         }
         $nsTransformMethod1 ='http://www.w3.org/2000/09/xmldsig#enveloped-signature';
-        $nsTransformMethod2 = 'http://www.w3.org/TR/2001/REC-xml-c14n-20010315';
+        $nsTransformMethod2 = $nsCannonMethod;
         $idSigned = trim($node->getAttribute($mark));
         $digestValue = self::makeDigest($node, $digestAlgorithm, $canonical);
         $signatureNode = $dom->createElementNS($nsDSIG, 'Signature');
         $signatureNode->setAttribute('Id', 'Ass_'.$idSigned);
         
         $root->appendChild($signatureNode);
-        $signedInfoNode = $dom->createElement('SignedInfo');
+        $signedInfoNode = $dom->createElementNS($nsDSIG, 'SignedInfo');
         $signatureNode->appendChild($signedInfoNode);
-        $canonicalNode = $dom->createElement('CanonicalizationMethod');
+        $canonicalNode = $dom->createElementNS($nsDSIG, 'CanonicalizationMethod');
         $signedInfoNode->appendChild($canonicalNode);
         $canonicalNode->setAttribute('Algorithm', $nsCannonMethod);
-        $signatureMethodNode = $dom->createElement('SignatureMethod');
+        $signatureMethodNode = $dom->createElementNS($nsDSIG, 'SignatureMethod');
         $signedInfoNode->appendChild($signatureMethodNode);
         $signatureMethodNode->setAttribute('Algorithm', $nsSignatureMethod);
-        $referenceNode = $dom->createElement('Reference');
+        $referenceNode = $dom->createElementNS($nsDSIG, 'Reference');
         $signedInfoNode->appendChild($referenceNode);
         if (!empty($idSigned)) {
             $idSigned = "#$idSigned";
         }
         $referenceNode->setAttribute('URI', $idSigned);
-        $transformsNode = $dom->createElement('Transforms');
+        $transformsNode = $dom->createElementNS($nsDSIG, 'Transforms');
         $referenceNode->appendChild($transformsNode);
-        $transfNode1 = $dom->createElement('Transform');
+        $transfNode1 = $dom->createElementNS($nsDSIG, 'Transform');
         $transformsNode->appendChild($transfNode1);
         $transfNode1->setAttribute('Algorithm', $nsTransformMethod1);
-        $transfNode2 = $dom->createElement('Transform');
+        $transfNode2 = $dom->createElementNS($nsDSIG, 'Transform');
         $transformsNode->appendChild($transfNode2);
         $transfNode2->setAttribute('Algorithm', $nsTransformMethod2);
-        $digestMethodNode = $dom->createElement('DigestMethod');
+        $digestMethodNode = $dom->createElementNS($nsDSIG, 'DigestMethod');
         $referenceNode->appendChild($digestMethodNode);
         $digestMethodNode->setAttribute('Algorithm', $nsDigestMethod);
-        $digestValueNode = $dom->createElement('DigestValue', $digestValue);
+        $digestValueNode = $dom->createElementNS($nsDSIG, 'DigestValue', $digestValue);
         $referenceNode->appendChild($digestValueNode);
         $c14n = self::canonize($signedInfoNode, $canonical);
         $signature = $certificate->sign($c14n, $algorithm);
         $signatureValue = base64_encode($signature);
-        $signatureValueNode = $dom->createElement('SignatureValue', $signatureValue);
+        $signatureValueNode = $dom->createElementNS($nsDSIG, 'SignatureValue', $signatureValue);
         $signatureNode->appendChild($signatureValueNode);
-        $keyInfoNode = $dom->createElement('KeyInfo');
+        $keyInfoNode = $dom->createElementNS($nsDSIG, 'KeyInfo');
         $signatureNode->appendChild($keyInfoNode);
-        $x509DataNode = $dom->createElement('X509Data');
+        $x509DataNode = $dom->createElementNS($nsDSIG, 'X509Data');
         $keyInfoNode->appendChild($x509DataNode);
         $pubKeyClean = $certificate->publicKey->unFormated();
-        $x509CertificateNode = $dom->createElement('X509Certificate', $pubKeyClean);
+        $x509CertificateNode = $dom->createElementNS($nsDSIG, 'X509Certificate', $pubKeyClean);
         $x509DataNode->appendChild($x509CertificateNode);
         return $dom;
     }

@@ -29,47 +29,47 @@
     "3506359": {
         "municipio": "Bertioga",
         "uf": "SP",
-        "homologacao": "https:\/\/homologacao.ginfes.com.br\/ServiceGinfesImpl",
-        "producao": "https:\/\/producao.ginfes.com.br\/ServiceGinfesImpl",
-        "version": "3",
-        "homologacao_soapns": "http:\/\/homologacao.ginfes.com.br",
-        "producao_soapns": "http:\/\/producao.ginfes.com.br"
+        "homologacao": "https://ws-homologacao-rtc.giss.com.br/service-ws/nf/nfse-ws",
+        "producao": "https://ws-bertioga.giss.com.br/service-ws/nf/nfse-ws",
+        "version": "2.04",
+        "homologacao_soapns": "http:\/\/nfse.abrasf.org.br",
+        "producao_soapns": "http:\/\/nfse.abrasf.org.br"
     },
     "3106705": {
         "municipio": "Betim",
         "uf": "MG",
-        "homologacao": "https:\/\/homologacao.ginfes.com.br\/ServiceGinfesImpl",
-        "producao": "https:\/\/producao.ginfes.com.br\/ServiceGinfesImpl",
-        "version": "3",
-        "homologacao_soapns": "http:\/\/homologacao.ginfes.com.br",
-        "producao_soapns": "http:\/\/producao.ginfes.com.br"
+        "homologacao": "https://ws-homologacao-rtc.giss.com.br/service-ws/nf/nfse-ws",
+        "producao": "https://ws-betim.giss.com.br/service-ws/nf/nfse-ws",
+        "version": "2.04",
+        "homologacao_soapns": "http:\/\/nfse.abrasf.org.br",
+        "producao_soapns": "http:\/\/nfse.abrasf.org.br"
     },
     "3301009": {
         "municipio": "Campos dos Goytacazes",
         "uf": "RJ",
-        "homologacao": "https:\/\/homologacao.ginfes.com.br\/ServiceGinfesImpl",
-        "producao": "https:\/\/producao.ginfes.com.br\/ServiceGinfesImpl",
-        "version": "3",
-        "homologacao_soapns": "http:\/\/homologacao.ginfes.com.br",
-        "producao_soapns": "http:\/\/producao.ginfes.com.br"
+        "homologacao": "https://ws-homologacao-rtc.giss.com.br/service-ws/nf/nfse-ws",
+        "producao": "https://ws-goytacazes.giss.com.br/service-ws/nf/nfse-ws",
+        "version": "2.04",
+        "homologacao_soapns": "http:\/\/nfse.abrasf.org.br",
+        "producao_soapns": "http:\/\/nfse.abrasf.org.br"
     },
     "3510401": {
         "municipio": "Capivari",
         "uf": "SP",
-        "homologacao": "https:\/\/homologacao.ginfes.com.br\/ServiceGinfesImpl",
-        "producao": "https:\/\/producao.ginfes.com.br\/ServiceGinfesImpl",
-        "version": "3",
-        "homologacao_soapns": "http:\/\/homologacao.ginfes.com.br",
-        "producao_soapns": "http:\/\/producao.ginfes.com.br"
+        "homologacao": "https://ws-homologacao-rtc.giss.com.br/service-ws/nf/nfse-ws",
+        "producao": "https://ws-capivari.giss.com.br/service-ws/nf/nfse-ws",
+        "version": "2.04",
+        "homologacao_soapns": "http:\/\/nfse.abrasf.org.br",
+        "producao_soapns": "http:\/\/nfse.abrasf.org.br"
     },
     "2604106": {
         "municipio": "Caruaru",
         "uf": "PE",
-        "homologacao": "https:\/\/homologacao.ginfes.com.br\/ServiceGinfesImpl",
-        "producao": "https:\/\/producao.ginfes.com.br\/ServiceGinfesImpl",
-        "version": "3",
-        "homologacao_soapns": "http:\/\/homologacao.ginfes.com.br",
-        "producao_soapns": "http:\/\/producao.ginfes.com.br"
+        "homologacao": "https://ws-homologacao-rtc.giss.com.br/service-ws/nf/nfse-ws",
+        "producao": "https://ws-caruaru.giss.com.br/service-ws/nf/nfse-ws",
+        "version": "2.04",
+        "homologacao_soapns": "http:\/\/nfse.abrasf.org.br",
+        "producao_soapns": "http:\/\/nfse.abrasf.org.br"
     },
     "3115300": {
         "municipio": "Cataguases",
@@ -110,20 +110,20 @@
     "3513801": {
         "municipio": "Diadema",
         "uf": "SP",
-        "homologacao": "https:\/\/homologacao.ginfes.com.br\/ServiceGinfesImpl",
-        "producao": "https:\/\/producao.ginfes.com.br\/ServiceGinfesImpl",
-        "version": "3",
-        "homologacao_soapns": "http:\/\/homologacao.ginfes.com.br",
-        "producao_soapns": "http:\/\/producao.ginfes.com.br"
+        "homologacao": "https://ws-homologacao-rtc.giss.com.br/service-ws/nf/nfse-ws",
+        "producao": "https://ws-diadema.giss.com.br/service-ws/nf/nfse-ws",
+        "version": "2.04",
+        "homologacao_soapns": "http:\/\/nfse.abrasf.org.br",
+        "producao_soapns": "http:\/\/nfse.abrasf.org.br"
     },
     "3515103": {
         "municipio": "Embu-Guacu",
         "uf": "SP",
-        "homologacao": "https:\/\/homologacao.ginfes.com.br\/ServiceGinfesImpl",
-        "producao": "https:\/\/producao.ginfes.com.br\/ServiceGinfesImpl",
-        "version": "3",
-        "homologacao_soapns": "http:\/\/homologacao.ginfes.com.br",
-        "producao_soapns": "http:\/\/producao.ginfes.com.br"
+        "homologacao": "https://ws-homologacao-rtc.giss.com.br/service-ws/nf/nfse-ws",
+        "producao": "https://ws-embuguacu.giss.com.br/service-ws/nf/nfse-ws",
+        "version": "2.04",
+        "homologacao_soapns": "http:\/\/nfse.abrasf.org.br",
+        "producao_soapns": "http:\/\/nfse.abrasf.org.br"
     },
     "3516200": {
         "municipio": "Franca",
@@ -137,48 +137,49 @@
     "3518305": {
         "municipio": "Guararema",
         "uf": "SP",
-        "homologacao": "https:\/\/homologacao.ginfes.com.br\/ServiceGinfesImpl",
-        "producao": "https:\/\/producao.ginfes.com.br\/ServiceGinfesImpl",
-        "version": "3",
-        "homologacao_soapns": "http:\/\/homologacao.ginfes.com.br",
-        "producao_soapns": "http:\/\/producao.ginfes.com.br"
+        "homologacao": "https://ws-homologacao-rtc.giss.com.br/service-ws/nf/nfse-ws",
+        "producao": "https://ws-guararema.giss.com.br/service-ws/nf/nfse-ws",
+        "version": "2.04",
+        "homologacao_soapns": "http:\/\/nfse.abrasf.org.br",
+        "producao_soapns": "http:\/\/nfse.abrasf.org.br"
     },
     "3518701": {
         "municipio": "Guaruja",
         "uf": "SP",
-        "homologacao": "https:\/\/homologacao.ginfes.com.br\/ServiceGinfesImpl",
-        "producao": "https:\/\/producao.ginfes.com.br\/ServiceGinfesImpl",
-        "version": "3",
-        "homologacao_soapns": "http:\/\/homologacao.ginfes.com.br",
-        "producao_soapns": "http:\/\/producao.ginfes.com.br"
+        "homologacao": "https://ws-homologacao-rtc.giss.com.br/service-ws/nf/nfse-ws",
+        "producao": "https://ws-guaruja.giss.com.br/service-ws/nf/nfse-ws",
+        "version": "2.04",
+        "homologacao_soapns": "http:\/\/nfse.abrasf.org.br",
+        "producao_soapns": "http:\/\/nfse.abrasf.org.br"
     },
+
     "3541000": {
         "municipio": "Praia Grande",
         "uf": "SP",
-        "homologacao": "https:\/\/homologacao.ginfes.com.br\/ServiceGinfesImpl",
-        "producao": "https:\/\/producao.ginfes.com.br\/ServiceGinfesImpl",
-        "version": "3",
-        "homologacao_soapns": "http:\/\/homologacao.ginfes.com.br",
-        "producao_soapns": "http:\/\/producao.ginfes.com.br"
+        "homologacao": "https://ws-homologacao-rtc.giss.com.br/service-ws/nf/nfse-ws",
+        "producao": "https://ws-praiagrande.giss.com.br/service-ws/nf/nfse-ws",
+        "version": "2.04",
+        "homologacao_soapns": "http:\/\/nfse.abrasf.org.br",
+        "producao_soapns": "http:\/\/nfse.abrasf.org.br"
     },
 
     "3518800": {
         "municipio": "Guarulhos",
         "uf": "SP",
-        "homologacao": "https:\/\/homologacao.ginfes.com.br\/ServiceGinfesImpl",
-        "producao": "https:\/\/producao.ginfes.com.br\/ServiceGinfesImpl",
-        "version": "3",
-        "homologacao_soapns": "http:\/\/homologacao.ginfes.com.br",
-        "producao_soapns": "http:\/\/producao.ginfes.com.br"
+        "homologacao": "https://ws-homologacao-rtc.giss.com.br/service-ws/nf/nfse-ws",
+        "producao": "https://ws-guarulhos.giss.com.br/service-ws/nf/nfse-ws",
+        "version": "2.04",
+        "homologacao_soapns": "http:\/\/nfse.abrasf.org.br",
+        "producao_soapns": "http:\/\/nfse.abrasf.org.br"
     },
     "3519071": {
         "municipio": "Hortolandia",
         "uf": "SP",
-        "homologacao": "https:\/\/homologacao.ginfes.com.br\/ServiceGinfesImpl",
-        "producao": "https:\/\/producao.ginfes.com.br\/ServiceGinfesImpl",
-        "version": "3",
-        "homologacao_soapns": "http:\/\/homologacao.ginfes.com.br",
-        "producao_soapns": "http:\/\/producao.ginfes.com.br"
+        "homologacao": "https://ws-homologacao-rtc.giss.com.br/service-ws/nf/nfse-ws",
+        "producao": "https://ws-hortolandia.giss.com.br/service-ws/nf/nfse-ws",
+        "version": "2.04",
+        "homologacao_soapns": "http:\/\/nfse.abrasf.org.br",
+        "producao_soapns": "http:\/\/nfse.abrasf.org.br"
     },
     "3301900": {
         "municipio": "Itaborai",
@@ -210,38 +211,38 @@
     "3523909": {
         "municipio": "Itu",
         "uf": "SP",
-        "homologacao": "https:\/\/homologacao.ginfes.com.br\/ServiceGinfesImpl",
-        "producao": "https:\/\/producao.ginfes.com.br\/ServiceGinfesImpl",
-        "version": "3",
-        "homologacao_soapns": "http:\/\/homologacao.ginfes.com.br",
-        "producao_soapns": "http:\/\/producao.ginfes.com.br"
+        "homologacao": "https://ws-homologacao-rtc.giss.com.br/service-ws/nf/nfse-ws",
+        "producao": "https://ws-itu.giss.com.br/service-ws/nf/nfse-ws",
+        "version": "2.04",
+        "homologacao_soapns": "http:\/\/nfse.abrasf.org.br",
+        "producao_soapns": "http:\/\/nfse.abrasf.org.br"
     },
     "3524303": {
         "municipio": "Jaboticabal",
         "uf": "SP",
-        "homologacao": "https:\/\/homologacao.ginfes.com.br\/ServiceGinfesImpl",
-        "producao": "https:\/\/producao.ginfes.com.br\/ServiceGinfesImpl",
-        "version": "3",
-        "homologacao_soapns": "http:\/\/homologacao.ginfes.com.br",
-        "producao_soapns": "http:\/\/producao.ginfes.com.br"
+        "homologacao": "https://ws-homologacao-rtc.giss.com.br/service-ws/nf/nfse-ws",
+        "producao": "https://ws-jaboticabal.giss.com.br/service-ws/nf/nfse-ws",
+        "version": "2.04",
+        "homologacao_soapns": "http:\/\/nfse.abrasf.org.br",
+        "producao_soapns": "http:\/\/nfse.abrasf.org.br"
     },
     "3525102": {
         "municipio": "Jardinopolis",
         "uf": "SP",
-        "homologacao": "https:\/\/homologacao.ginfes.com.br\/ServiceGinfesImpl",
-        "producao": "https:\/\/producao.ginfes.com.br\/ServiceGinfesImpl",
-        "version": "3",
-        "homologacao_soapns": "http:\/\/homologacao.ginfes.com.br",
-        "producao_soapns": "http:\/\/producao.ginfes.com.br"
+        "homologacao": "https://ws-homologacao-rtc.giss.com.br/service-ws/nf/nfse-ws",
+        "producao": "https://ws-jardinopolis.giss.com.br/service-ws/nf/nfse-ws",
+        "version": "2.04",
+        "homologacao_soapns": "http:\/\/nfse.abrasf.org.br",
+        "producao_soapns": "http:\/\/nfse.abrasf.org.br"
     },
     "3525904": {
         "municipio": "Jundiai",
         "uf": "SP",
-        "homologacao": "https:\/\/homologacao.ginfes.com.br\/ServiceGinfesImpl",
-        "producao": "https:\/\/producao.ginfes.com.br\/ServiceGinfesImpl",
-        "version": "3",
-        "homologacao_soapns": "http:\/\/homologacao.ginfes.com.br",
-        "producao_soapns": "http:\/\/producao.ginfes.com.br"
+        "homologacao": "https://ws-homologacao-rtc.giss.com.br/service-ws/nf/nfse-ws",
+        "producao": "https://ws-jundiai.giss.com.br/service-ws/nf/nfse-ws",
+        "version": "2.04",
+        "homologacao_soapns": "http:\/\/nfse.abrasf.org.br",
+        "producao_soapns": "http:\/\/nfse.abrasf.org.br"
     },
     "3137601": {
         "municipio": "Lagoa Santa",
@@ -255,20 +256,20 @@
     "2704302": {
         "municipio": "Maceio",
         "uf": "AL",
-        "homologacao": "https:\/\/homologacao.ginfes.com.br\/ServiceGinfesImpl",
-        "producao": "https:\/\/producao.ginfes.com.br\/ServiceGinfesImpl",
-        "version": "3",
-        "homologacao_soapns": "http:\/\/homologacao.ginfes.com.br",
-        "producao_soapns": "http:\/\/producao.ginfes.com.br"
+        "homologacao": "https://ws-homologacao-rtc.giss.com.br/service-ws/nf/nfse-ws",
+        "producao": "https://ws-maceio.giss.com.br/service-ws/nf/nfse-ws",
+        "version": "2.04",
+        "homologacao_soapns": "http:\/\/nfse.abrasf.org.br",
+        "producao_soapns": "http:\/\/nfse.abrasf.org.br"
     },
     "2704708": {
         "municipio": "Marechal Deodoro",
         "uf": "AL",
-        "homologacao": "https:\/\/homologacao.ginfes.com.br\/ServiceGinfesImpl",
-        "producao": "https:\/\/producao.ginfes.com.br\/ServiceGinfesImpl",
-        "version": "3",
-        "homologacao_soapns": "http:\/\/homologacao.ginfes.com.br",
-        "producao_soapns": "http:\/\/producao.ginfes.com.br"
+        "homologacao": "https://ws-homologacao-rtc.giss.com.br/service-ws/nf/nfse-ws",
+        "producao": "https://ws-marechaldeodoro.giss.com.br/service-ws/nf/nfse-ws",
+        "version": "2.04",
+        "homologacao_soapns": "http:\/\/nfse.abrasf.org.br",
+        "producao_soapns": "http:\/\/nfse.abrasf.org.br"
     },
     "3302700": {
         "municipio": "Marica",
@@ -282,29 +283,29 @@
     "3529302": {
         "municipio": "Matao",
         "uf": "SP",
-        "homologacao": "https:\/\/homologacao.ginfes.com.br\/ServiceGinfesImpl",
-        "producao": "https:\/\/producao.ginfes.com.br\/ServiceGinfesImpl",
-        "version": "3",
-        "homologacao_soapns": "http:\/\/homologacao.ginfes.com.br",
-        "producao_soapns": "http:\/\/producao.ginfes.com.br"
+        "homologacao": "https://ws-homologacao-rtc.giss.com.br/service-ws/nf/nfse-ws",
+        "producao": "https://ws-matao.giss.com.br/service-ws/nf/nfse-ws",
+        "version": "2.04",
+        "homologacao_soapns": "http:\/\/nfse.abrasf.org.br",
+        "producao_soapns": "http:\/\/nfse.abrasf.org.br"
     },
     "3529401": {
         "municipio": "Maua",
         "uf": "SP",
-        "homologacao": "https:\/\/homologacao.ginfes.com.br\/ServiceGinfesImpl",
-        "producao": "https:\/\/producao.ginfes.com.br\/ServiceGinfesImpl",
-        "version": "3",
-        "homologacao_soapns": "http:\/\/homologacao.ginfes.com.br",
-        "producao_soapns": "http:\/\/producao.ginfes.com.br"
+        "homologacao": "https://ws-homologacao-rtc.giss.com.br/service-ws/nf/nfse-ws",
+        "producao": "https://ws-maua.giss.com.br/service-ws/nf/nfse-ws",
+        "version": "2.04",
+        "homologacao_soapns": "http:\/\/nfse.abrasf.org.br",
+        "producao_soapns": "http:\/\/nfse.abrasf.org.br"
     },
     "5213103": {
         "municipio": "Mineiros",
         "uf": "GO",
-        "homologacao": "https:\/\/homologacao.ginfes.com.br\/ServiceGinfesImpl",
-        "producao": "https:\/\/producao.ginfes.com.br\/ServiceGinfesImpl",
-        "version": "3",
-        "homologacao_soapns": "http:\/\/homologacao.ginfes.com.br",
-        "producao_soapns": "http:\/\/producao.ginfes.com.br"
+        "homologacao": "https://ws-homologacao-rtc.giss.com.br/service-ws/nf/nfse-ws",
+        "producao": "https://ws-mineiros.giss.com.br/service-ws/nf/nfse-ws",
+        "version": "2.04",
+        "homologacao_soapns": "http:\/\/nfse.abrasf.org.br",
+        "producao_soapns": "http:\/\/nfse.abrasf.org.br"
     },
     "3531902": {
         "municipio": "Morro Agudo",
@@ -318,20 +319,20 @@
     "3143906": {
         "municipio": "Muriae",
         "uf": "MG",
-        "homologacao": "https:\/\/homologacao.ginfes.com.br\/ServiceGinfesImpl",
-        "producao": "https:\/\/producao.ginfes.com.br\/ServiceGinfesImpl",
-        "version": "3",
-        "homologacao_soapns": "http:\/\/homologacao.ginfes.com.br",
-        "producao_soapns": "http:\/\/producao.ginfes.com.br"
+        "homologacao": "https://ws-homologacao-rtc.giss.com.br/service-ws/nf/nfse-ws",
+        "producao": "https://ws-muriae.giss.com.br/service-ws/nf/nfse-ws",
+        "version": "2.04",
+        "homologacao_soapns": "http:\/\/nfse.abrasf.org.br",
+        "producao_soapns": "http:\/\/nfse.abrasf.org.br"
     },
     "3533908": {
         "municipio": "Olimpia",
         "uf": "SP",
-        "homologacao": "https:\/\/homologacao.ginfes.com.br\/ServiceGinfesImpl",
-        "producao": "https:\/\/producao.ginfes.com.br\/ServiceGinfesImpl",
-        "version": "3",
-        "homologacao_soapns": "http:\/\/homologacao.ginfes.com.br",
-        "producao_soapns": "http:\/\/producao.ginfes.com.br"
+        "homologacao": "https://ws-homologacao-rtc.giss.com.br/service-ws/nf/nfse-ws",
+        "producao": "https://ws-olimpia.giss.com.br/service-ws/nf/nfse-ws",
+        "version": "2.04",
+        "homologacao_soapns": "http:\/\/nfse.abrasf.org.br",
+        "producao_soapns": "http:\/\/nfse.abrasf.org.br"
     },
     "3145604": {
         "municipio": "Oliveira",
@@ -354,11 +355,11 @@
     "3536505": {
         "municipio": "Paulinia",
         "uf": "SP",
-        "homologacao": "https:\/\/homologacao.ginfes.com.br\/ServiceGinfesImpl",
-        "producao": "https:\/\/producao.ginfes.com.br\/ServiceGinfesImpl",
-        "version": "3",
-        "homologacao_soapns": "http:\/\/homologacao.ginfes.com.br",
-        "producao_soapns": "http:\/\/producao.ginfes.com.br"
+        "homologacao": "https://ws-homologacao-rtc.giss.com.br/service-ws/nf/nfse-ws",
+        "producao": "https://ws-paulinia.giss.com.br/service-ws/nf/nfse-ws",
+        "version": "2.04",
+        "homologacao_soapns": "http:\/\/nfse.abrasf.org.br",
+        "producao_soapns": "http:\/\/nfse.abrasf.org.br"
     },
     "3540705": {
         "municipio": "Porto Ferreira",
@@ -390,11 +391,11 @@
     "3543303": {
         "municipio": "Ribeirao Pires",
         "uf": "SP",
-        "homologacao": "https:\/\/homologacao.ginfes.com.br\/ServiceGinfesImpl",
-        "producao": "https:\/\/producao.ginfes.com.br\/ServiceGinfesImpl",
-        "version": "3",
-        "homologacao_soapns": "http:\/\/homologacao.ginfes.com.br",
-        "producao_soapns": "http:\/\/producao.ginfes.com.br"
+        "homologacao": "https://ws-homologacao-rtc.giss.com.br/service-ws/nf/nfse-ws",
+        "producao": "https://ws-ribeiraopires.giss.com.br/service-ws/nf/nfse-ws",
+        "version": "2.04",
+        "homologacao_soapns": "http:\/\/nfse.abrasf.org.br",
+        "producao_soapns": "http:\/\/nfse.abrasf.org.br"
     },
     "3543402": {
         "municipio": "Ribeirao Preto",
@@ -408,11 +409,11 @@
     "3543907": {
         "municipio": "Rio Claro",
         "uf": "SP",
-        "homologacao": "https:\/\/homologacao.ginfes.com.br\/ServiceGinfesImpl",
-        "producao": "https:\/\/producao.ginfes.com.br\/ServiceGinfesImpl",
-        "version": "3",
-        "homologacao_soapns": "http:\/\/homologacao.ginfes.com.br",
-        "producao_soapns": "http:\/\/producao.ginfes.com.br"
+        "homologacao": "https://ws-homologacao-rtc.giss.com.br/service-ws/nf/nfse-ws",
+        "producao": "https://ws-rioclaro.giss.com.br/service-ws/nf/nfse-ws",
+        "version": "2.04",
+        "homologacao_soapns": "http:\/\/nfse.abrasf.org.br",
+        "producao_soapns": "http:\/\/nfse.abrasf.org.br"
     },
     "3545209": {
         "municipio": "Salto",
@@ -444,20 +445,20 @@
     "3547809": {
         "municipio": "Santo Andre",
         "uf": "SP",
-        "homologacao": "https:\/\/homologacao.ginfes.com.br\/ServiceGinfesImpl",
-        "producao": "https:\/\/producao.ginfes.com.br\/ServiceGinfesImpl",
-        "version": "3",
-        "homologacao_soapns": "http:\/\/homologacao.ginfes.com.br",
-        "producao_soapns": "http:\/\/producao.ginfes.com.br"
+        "homologacao": "https://ws-homologacao-rtc.giss.com.br/service-ws/nf/nfse-ws",
+        "producao": "https://ws-santoandre.giss.com.br/service-ws/nf/nfse-ws",
+        "version": "2.04",
+        "homologacao_soapns": "http:\/\/nfse.abrasf.org.br",
+        "producao_soapns": "http:\/\/nfse.abrasf.org.br"
     },
     "3548500": {
         "municipio": "Santos",
         "uf": "SP",
-        "homologacao": "https:\/\/homologacao.ginfes.com.br\/ServiceGinfesImpl",
-        "producao": "https:\/\/producao.ginfes.com.br\/ServiceGinfesImpl",
-        "version": "3",
-        "homologacao_soapns": "http:\/\/homologacao.ginfes.com.br",
-        "producao_soapns": "http:\/\/producao.ginfes.com.br"
+        "homologacao": "https://ws-homologacao-rtc.giss.com.br/service-ws/nf/nfse-ws",
+        "producao": "https://ws-santos.giss.com.br/service-ws/nf/nfse-ws",
+        "version": "2.04",
+        "homologacao_soapns": "http:\/\/nfse.abrasf.org.br",
+        "producao_soapns": "http:\/\/nfse.abrasf.org.br"
     },
     "3548708": {
         "municipio": "Sao Bernardo do Campos",
@@ -471,11 +472,11 @@
     "3548807": {
         "municipio": "Sao Caetano do Sul",
         "uf": "SP",
-        "homologacao": "https:\/\/homologacao.ginfes.com.br\/ServiceGinfesImpl",
-        "producao": "https:\/\/producao.ginfes.com.br\/ServiceGinfesImpl",
-        "version": "3",
-        "homologacao_soapns": "http:\/\/homologacao.ginfes.com.br",
-        "producao_soapns": "http:\/\/producao.ginfes.com.br"
+        "homologacao": "https://ws-homologacao-rtc.giss.com.br/service-ws/nf/nfse-ws",
+        "producao": "https://ws-scs.giss.com.br/service-ws/nf/nfse-ws",
+        "version": "2.04",
+        "homologacao_soapns": "http:\/\/nfse.abrasf.org.br",
+        "producao_soapns": "http:\/\/nfse.abrasf.org.br"
     },
     "3548906": {
         "municipio": "Sao Carlos",
@@ -489,11 +490,11 @@
     "3549805": {
         "municipio": "Sao Jose do Rio Preto",
         "uf": "SP",
-        "homologacao": "https:\/\/homologacao.ginfes.com.br\/ServiceGinfesImpl",
-        "producao": "https:\/\/producao.ginfes.com.br\/ServiceGinfesImpl",
-        "version": "3",
-        "homologacao_soapns": "http:\/\/homologacao.ginfes.com.br",
-        "producao_soapns": "http:\/\/producao.ginfes.com.br"
+        "homologacao": "https://ws-homologacao-rtc.giss.com.br/service-ws/nf/nfse-ws",
+        "producao": "https://ws-sjrp.giss.com.br/service-ws/nf/nfse-ws",
+        "version": "2.04",
+        "homologacao_soapns": "http:\/\/nfse.abrasf.org.br",
+        "producao_soapns": "http:\/\/nfse.abrasf.org.br"
     },
     "3550605": {
         "municipio": "Sao Roque",
@@ -516,11 +517,11 @@
     "3552502": {
         "municipio": "Suzano",
         "uf": "SP",
-        "homologacao": "https:\/\/homologacao.ginfes.com.br\/ServiceGinfesImpl",
-        "producao": "https:\/\/producao.ginfes.com.br\/ServiceGinfesImpl",
-        "version": "3",
-        "homologacao_soapns": "http:\/\/homologacao.ginfes.com.br",
-        "producao_soapns": "http:\/\/producao.ginfes.com.br"
+        "homologacao": "https://ws-homologacao-rtc.giss.com.br/service-ws/nf/nfse-ws",
+        "producao": "https://ws-suzano.giss.com.br/service-ws/nf/nfse-ws",
+        "version": "2.04",
+        "homologacao_soapns": "http:\/\/nfse.abrasf.org.br",
+        "producao_soapns": "http:\/\/nfse.abrasf.org.br"
     },
     "3553708": {
         "municipio": "Taquaritinga",
@@ -543,11 +544,11 @@
     "4128104": {
         "municipio": "Umuarama",
         "uf": "PR",
-        "homologacao": "https:\/\/homologacao.ginfes.com.br\/ServiceGinfesImpl",
-        "producao": "https:\/\/producao.ginfes.com.br\/ServiceGinfesImpl",
-        "version": "3",
-        "homologacao_soapns": "http:\/\/homologacao.ginfes.com.br",
-        "producao_soapns": "http:\/\/producao.ginfes.com.br"
+        "homologacao": "https://ws-homologacao-rtc.giss.com.br/service-ws/nf/nfse-ws",
+        "producao": "https://ws-umuarama.giss.com.br/service-ws/nf/nfse-ws",
+        "version": "2.04",
+        "homologacao_soapns": "http:\/\/nfse.abrasf.org.br",
+        "producao_soapns": "http:\/\/nfse.abrasf.org.br"
     },
     "3170701": {
         "municipio": "Varginha",

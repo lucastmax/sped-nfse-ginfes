@@ -51,6 +51,27 @@ class SoapCurl extends SoapBase implements SoapInterface
         $parameters
     ) {
         $response = '';
+
+        // ABRASF document/literal endpoints require the fully-qualified action.
+        // Normalize it here as well so callers cannot accidentally send only
+        // the local operation name.
+        if (strpos($envelope, 'xmlns:nfse="http://nfse.abrasf.org.br"') !== false) {
+            $action = 'http://nfse.abrasf.org.br/' . $operation;
+            $normalized = [];
+            foreach ($parameters as $parameter) {
+                if (stripos($parameter, 'SOAPAction:') === 0) {
+                    continue;
+                }
+                if (stripos($parameter, 'Content-Type:') === 0) {
+                    continue;
+                }
+                $normalized[] = $parameter;
+            }
+            array_unshift($normalized, 'Content-Type: text/xml;charset=utf-8');
+            $normalized[] = 'SOAPAction: "' . $action . '"';
+            $parameters = $normalized;
+        }
+
         $this->requestHead = implode("\n", $parameters);
         $this->requestBody = $envelope;
         

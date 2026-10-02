@@ -24,6 +24,9 @@ class Tools
 {
     public $lastRequest;
 
+    /** @var array HTTP headers used by the last SOAP request. */
+    public $lastRequestHeader = [];
+
     protected $config;
     protected $prestador;
     protected $certificate;
@@ -121,15 +124,22 @@ class Tools
         $request = $this->createSoapRequest($message, $operation);
         $this->lastRequest = $request;
 
+        $contentType = 'application/soap+xml;charset=utf-8';
+        if (strpos($request, 'xmlns:nfse="http://nfse.abrasf.org.br"') !== false) {
+            $action = 'http://nfse.abrasf.org.br/' . $operation;
+            $contentType = 'text/xml;charset=utf-8';
+        }
+
         if (empty($this->soap)) {
             $this->soap = new SoapCurl($this->certificate);
         }
         $msgSize = strlen($request);
         $parameters = [
-            "Content-Type: application/soap+xml;charset=utf-8",
+            "Content-Type: $contentType",
             "SOAPAction: \"$action\"",
             "Content-length: $msgSize"
         ];
+        $this->lastRequestHeader = $parameters;
         $response = (string)$this->soap->send(
             $operation,
             $url,
@@ -155,7 +165,68 @@ class Tools
             $node = $dom->getElementsByTagName('return')->item(0);
             return $node->textContent;
         }
+        if (!empty($dom->getElementsByTagName('outputXML')->item(0))) {
+            $node = $dom->getElementsByTagName('outputXML')->item(0);
+            return trim($node->textContent);
+        }
         return $response;
+    }
+
+    /**
+     * Converts a SOAP response or an extracted NFSe XML response to an array.
+     * Repeated elements are represented as indexed arrays.
+     *
+     * @param string $response
+     * @return array
+     */
+    public function responseToArray($response)
+    {
+        $xml = $this->extractContentFromResponse($response, '');
+        $dom = new \DOMDocument('1.0', 'UTF-8');
+        $dom->preserveWhiteSpace = false;
+        libxml_use_internal_errors(true);
+        $loaded = $dom->loadXML($xml, LIBXML_NOBLANKS | LIBXML_NOCDATA);
+        $errors = libxml_get_errors();
+        libxml_clear_errors();
+        libxml_use_internal_errors(false);
+        if (!$loaded || !$dom->documentElement) {
+            $message = !empty($errors) ? trim($errors[0]->message) : 'conteúdo vazio';
+            throw new \InvalidArgumentException('Não foi possível converter o XML de resposta: ' . $message);
+        }
+        return [$dom->documentElement->localName => $this->elementToArray($dom->documentElement)];
+    }
+
+    /** @return array|string */
+    protected function elementToArray(\DOMElement $element)
+    {
+        $result = [];
+        if ($element->hasAttributes()) {
+            foreach ($element->attributes as $attribute) {
+                if (strpos($attribute->nodeName, 'xmlns') === 0) {
+                    continue;
+                }
+                $result['@attributes'][$attribute->localName] = $attribute->nodeValue;
+            }
+        }
+        foreach ($element->childNodes as $child) {
+            if (!$child instanceof \DOMElement) {
+                continue;
+            }
+            $name = $child->localName;
+            $value = $this->elementToArray($child);
+            if (!array_key_exists($name, $result)) {
+                $result[$name] = $value;
+                continue;
+            }
+            if (!is_array($result[$name]) || !array_key_exists(0, $result[$name])) {
+                $result[$name] = [$result[$name]];
+            }
+            $result[$name][] = $value;
+        }
+        if (empty($result)) {
+            return trim($element->textContent);
+        }
+        return $result;
     }
 
     /**
